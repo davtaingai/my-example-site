@@ -1,0 +1,101 @@
+.header{
+    background-color: #283593;
+    color: #FFF;
+    display: flex;                    /*when tell the parent element to use flex, all direct children elements will be lining up in one signle line */
+    justify-content: space-between;   /* any of direct children will be distributed evently in the line*/
+    align-item: center;
+    padding: 0 45px 0 45px;
+    flex-wrap: wrap;
+  }
+  
+  .nav{
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav a{
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-out;
+  }
+  
+  .nav a:hover{
+    color: #c5cae9;
+    transform: rotate(6deg);
+  }
+  
+  .nav li{
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  .hero{
+    background-color: #c5cae9;
+    padding: 60px 45px;
+    display: flex;                /*when tell the parent element to use flex, all direct children elements will be lining up in one signle line */
+    justify-content: center;      /*direct children elements will be distrubuted evently from the center */
+  }
+  
+  .hero-inner{
+    max-width: 760px;
+  }
+  
+  .hero h1{
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .hero p{
+    font-size: 1.18rem;
+    line-height: 1.6;
+  }
+  
+  .learnMoreButton{
+    background-color: #3949ab;
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.18rem;
+    display: inline-block;
+  }
+  
+  .feature{
+    background-color: #e8eaf6;
+    padding: 60px 45px;
+  }
+  
+  .feature-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;                  /*All children components will be distrubuted in grid. And use grid-template-columns to defind the location*/
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+  }
+  
+  .feature-item h3{
+    color: #283593;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .feature-item p{
+    margin: 0;
+    line-jeight: 1.6;
+    color: #333
+  }
+  
+  .footer{
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: .9rem;
+  }
